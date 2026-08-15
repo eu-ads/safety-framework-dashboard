@@ -1,0 +1,28 @@
+# shinylive on Apache (Ionos) — MIME types, service worker, caching
+AddType application/wasm .wasm
+AddType application/javascript .js
+AddType application/json .json
+
+<IfModule mod_headers.c>
+  # Allow the shinylive service worker to control the whole app scope
+  <FilesMatch "shinylive-sw\.js$">
+    Header set Service-Worker-Allowed "/"
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # Data files: allow fetch from the app, cache aggressively (versioned by upload)
+  <FilesMatch "\.(rds|csv)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # WASM runtime: cache aggressively
+  <FilesMatch "\.(wasm|data)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# Serve pre-compressed files if the client supports it (optional; harmless if absent)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/javascript application/json text/html text/css
+</IfModule>
