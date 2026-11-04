@@ -1,0 +1,11 @@
+year,participants,injury_acc,per_accident,source
+2016,,308145,1.851,"not published openly: mean ratio 2022-2025"
+2017,,302656,1.851,"not published openly: mean ratio 2022-2025"
+2018,,308721,1.851,"not published openly: mean ratio 2022-2025"
+2019,,300143,1.851,"not published openly: mean ratio 2022-2025"
+2020,,264499,1.851,"not published openly: mean ratio 2022-2025"
+2021,,258987,1.851,"not published openly: mean ratio 2022-2025"
+2022,536227,289672,1.851,Destatis Beteiligte an Unfaellen mit Personenschaden
+2023,542416,291890,1.858,Destatis Beteiligte an Unfaellen mit Personenschaden
+2024,538097,290701,1.851,Destatis Beteiligte an Unfaellen mit Personenschaden
+2025,547821,297364,1.842,Destatis Beteiligte an Unfaellen mit Personenschaden
