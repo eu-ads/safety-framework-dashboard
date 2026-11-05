@@ -1,0 +1,12 @@
+Copyright (c) 2026 eu-ads. All rights reserved.
+
+This notice covers the application code (app.json) and the texts of this website.
+No licence is granted to copy, modify or redistribute them.
+
+Not covered, each under its own terms:
+
+- data/: road data derived from OpenStreetMap are available under the Open Database
+  License (ODbL). Accident data, boundaries and the other sources are listed in legal.html.
+- shinylive/, shinylive-sw.js, edit/: the Shiny, shinylive and webR runtime with its
+  R packages, each under its own open-source licence.
+- Traffic sign graphics: public domain. Map icons: Font Awesome Free, CC BY 4.0.
